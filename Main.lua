@@ -2,7 +2,7 @@
 -- Version: 3.2
 
 -- Instances:
-
+local HttpService = game:GetService("HttpService")
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -89,10 +89,8 @@ AutoFarm.Text = "Auto Farm"
 AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
 AutoFarm.TextSize = 18.000
 UICorner_5.Parent = AutoFarm
-
 AutoFarm.MouseButton1Click:Connect(function()
-	local HttpService = game:GetService("HttpService")
-	local code = HttpService:GetAsync("https://raw.githubusercontent.com/exnryptedDino/Dino-Hub/main/AutoFarm.lua", true)
+	local code = HttpService:GetAsync("https://github.com/exnryptedDino/Dino-Hub/blob/main/AutoFarm.lua", true)
 	local f = loadstring(code)
 	f()
 end)
