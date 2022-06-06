@@ -92,7 +92,7 @@ UICorner_5.Parent = AutoFarm
 
 AutoFarm.MouseButton1Click:Connect(function()
 	local HttpService = game:GetService("HttpService")
-	local code = HttpService:GetAsync("https://raw.githubusercontent.com/exnryptedDino/Dino-Hub/main/AutoFarm?token=GHSAT0AAAAAABUCWOEY4QBHH7I3G4T6V32UYU6Q73A", true)
+	local code = HttpService:GetAsync("https://raw.githubusercontent.com/exnryptedDino/Dino-Hub/main/AutoFarm.lua", true)
 	local f = loadstring(code)
 	f()
 end)
