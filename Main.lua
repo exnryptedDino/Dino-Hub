@@ -90,9 +90,8 @@ AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
 AutoFarm.TextSize = 18.000
 UICorner_5.Parent = AutoFarm
 AutoFarm.MouseButton1Click:Connect(function()
-	local code = HttpService:GetAsync("https://github.com/exnryptedDino/Dino-Hub/blob/main/AutoFarm.lua", true)
-	local f = loadstring(code)
-	f()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/exnryptedDino/Dino-Hub/main/AutoFarm.lua",true));
+
 end)
 
 ChestEsp.Name = "Chest Esp"
